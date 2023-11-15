@@ -52,5 +52,6 @@ def encrypt(sentence,key):
         new_letter = alphabet[new_index]
         result = f"{result}{new_letter}"
     return result    
-result = encrypt("CIAO",1)
+test = "CIAO"
+result = encrypt(test,1)
 print(result)
