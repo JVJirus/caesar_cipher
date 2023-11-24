@@ -16,19 +16,6 @@ def encrypt(sentence,key):
     
     return result    
 
-Text = input("Your string here ") #We want to read the input
-#key = input("Select your Key value ") #They can choose the key || They cannot cuz we cant add a string and an int 
- 
-
-     
-   
-   
-#if test.isnumeric() == True: # I dont want only numbers /  anyway useless cuz now we also accept numbers with the IF
-    #test = input("No numbers please, retry. Your String here ")
-#test = test.upper() #Just to guarantee the function finds the correct letter, downside is all results will all be uppercase / obsolete cuz we fixed it by adding lower uppcase letter in list
-result = encrypt(Text,1)
-print(result)
-
 def decrypt(sentence,key):
     result = f""
     for element in sentence:
@@ -46,6 +33,3 @@ def decrypt(sentence,key):
         result = f"{result}{new_letter}"    
     
     return result    
-
-test = decrypt(result,1)
-print(test)
